@@ -1,0 +1,468 @@
+{"level":30,"time":"2024-12-04T12:26:16.707Z","pid":4468,"hostname":"Micro3050","msg":"Listening on 54847"}
+(node:4468) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2024-12-04T12:26:16.934Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-12-04T12:26:17.356Z","pid":4468,"hostname":"Micro3050","msg":"Adding browser to stack: chromium, version: 130.0.6723.31"}
+{"level":30,"time":"2024-12-04T12:26:17.357Z","pid":4468,"hostname":"Micro3050","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-12-04T12:26:17.356Z","pid":4468,"hostname":"Micro3050","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-12-04T12:26:17.384Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-12-04T12:26:17.384Z","pid":4468,"hostname":"Micro3050","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-12-04T12:26:17.384Z","pid":4468,"hostname":"Micro3050","msg":"Trace file: "}
+{"level":30,"time":"2024-12-04T12:26:17.411Z","pid":4468,"hostname":"Micro3050","msg":"Changed active context"}
+{"level":30,"time":"2024-12-04T12:26:17.412Z","pid":4468,"hostname":"Micro3050","msg":"End of node method newContext"}
+{"level":30,"time":"2024-12-04T12:26:17.417Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-12-04T12:26:17.417Z","pid":4468,"hostname":"Micro3050","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-12-04T12:26:17.963Z","pid":4468,"hostname":"Micro3050","msg":"Video path: undefined"}
+{"level":30,"time":"2024-12-04T12:26:17.963Z","pid":4468,"hostname":"Micro3050","msg":"Changed active page"}
+{"level":30,"time":"2024-12-04T12:26:24.153Z","pid":4468,"hostname":"Micro3050","msg":"End of node method newPage"}
+{"level":30,"time":"2024-12-04T12:26:24.161Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-12-04T12:26:24.161Z","pid":4468,"hostname":"Micro3050","msg":"Strict mode is enabled, find Locator with id=onetrust-accept-btn-handler in page."}
+{"level":30,"time":"2024-12-04T12:26:24.312Z","pid":4468,"hostname":"Micro3050","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-12-04T12:26:24.316Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method click"}
+{"level":30,"time":"2024-12-04T12:26:24.316Z","pid":4468,"hostname":"Micro3050","msg":"Strict mode is enabled, find Locator with id=onetrust-accept-btn-handler in page."}
+{"level":30,"time":"2024-12-04T12:26:24.538Z","pid":4468,"hostname":"Micro3050","msg":"End of node method click"}
+{"level":30,"time":"2024-12-04T12:26:24.545Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method WaitForPageLoadState"}
+{"level":30,"time":"2024-12-04T12:26:24.546Z","pid":4468,"hostname":"Micro3050","msg":"timeout: 10000 state: domcontentloaded"}
+{"level":30,"time":"2024-12-04T12:26:24.548Z","pid":4468,"hostname":"Micro3050","msg":"End of node method WaitForPageLoadState"}
+{"level":30,"time":"2024-12-04T12:26:24.554Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2024-12-04T12:26:24.555Z","pid":4468,"hostname":"Micro3050","Take screenshot with options: ":{"path":"C:\\Users\\Gebruiker\\Desktop\\ASR\\browser\\screenshot\\robotframework-browser-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2024-12-04T12:26:24.744Z","pid":4468,"hostname":"Micro3050","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2024-12-04T12:26:24.749Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2024-12-04T12:26:24.770Z","pid":4468,"hostname":"Micro3050","msg":"Removed page=876a4c45-8128-4b31-b3d6-7adfa28fbc51 from context=6483bf8b-f476-4e47-997c-fc8fa8901e98 page stack"}
+{"level":30,"time":"2024-12-04T12:26:25.165Z","pid":4468,"hostname":"Micro3050","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11598:59)
+    at PlaywrightServer.setTimeout (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11837:57)
+    at Object.onReceiveHalfClose (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2024-12-04T12:26:25.220Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:26:25.220Z","pid":4468,"hostname":"Micro3050","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:26:25.225Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:26:25.225Z","pid":4468,"hostname":"Micro3050","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:26:25.229Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-12-04T12:26:25.650Z","pid":4468,"hostname":"Micro3050","msg":"Adding browser to stack: chromium, version: 130.0.6723.31"}
+{"level":30,"time":"2024-12-04T12:26:25.650Z","pid":4468,"hostname":"Micro3050","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-12-04T12:26:25.650Z","pid":4468,"hostname":"Micro3050","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-12-04T12:26:25.653Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-12-04T12:26:25.653Z","pid":4468,"hostname":"Micro3050","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-12-04T12:26:25.653Z","pid":4468,"hostname":"Micro3050","msg":"Trace file: "}
+{"level":30,"time":"2024-12-04T12:26:25.714Z","pid":4468,"hostname":"Micro3050","msg":"Changed active context"}
+{"level":30,"time":"2024-12-04T12:26:25.715Z","pid":4468,"hostname":"Micro3050","msg":"End of node method newContext"}
+{"level":30,"time":"2024-12-04T12:26:25.718Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-12-04T12:26:25.718Z","pid":4468,"hostname":"Micro3050","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-12-04T12:26:26.328Z","pid":4468,"hostname":"Micro3050","msg":"Video path: undefined"}
+{"level":30,"time":"2024-12-04T12:26:26.329Z","pid":4468,"hostname":"Micro3050","msg":"Changed active page"}
+{"level":30,"time":"2024-12-04T12:26:34.343Z","pid":4468,"hostname":"Micro3050","msg":"End of node method newPage"}
+{"level":30,"time":"2024-12-04T12:26:34.350Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-12-04T12:26:34.351Z","pid":4468,"hostname":"Micro3050","msg":"Strict mode is enabled, find Locator with //*[@data-uitest=\"icon-tile-header\" and span[text()=\"Alle verzekeringen\"]] in page."}
+{"level":30,"time":"2024-12-04T12:26:34.498Z","pid":4468,"hostname":"Micro3050","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-12-04T12:26:34.502Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method click"}
+{"level":30,"time":"2024-12-04T12:26:34.502Z","pid":4468,"hostname":"Micro3050","msg":"Strict mode is enabled, find Locator with //*[@data-uitest=\"icon-tile-header\" and span[text()=\"Alle verzekeringen\"]] in page."}
+{"level":30,"time":"2024-12-04T12:26:35.134Z","pid":4468,"hostname":"Micro3050","msg":"End of node method click"}
+{"level":30,"time":"2024-12-04T12:26:35.160Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method WaitForPageLoadState"}
+{"level":30,"time":"2024-12-04T12:26:35.160Z","pid":4468,"hostname":"Micro3050","msg":"timeout: 10000 state: domcontentloaded"}
+{"level":30,"time":"2024-12-04T12:26:37.000Z","pid":4468,"hostname":"Micro3050","msg":"End of node method WaitForPageLoadState"}
+{"level":30,"time":"2024-12-04T12:26:37.008Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2024-12-04T12:26:37.008Z","pid":4468,"hostname":"Micro3050","Take screenshot with options: ":{"path":"C:\\Users\\Gebruiker\\Desktop\\ASR\\browser\\screenshot\\robotframework-browser-screenshot-2.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2024-12-04T12:26:37.606Z","pid":4468,"hostname":"Micro3050","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2024-12-04T12:26:37.612Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2024-12-04T12:26:37.626Z","pid":4468,"hostname":"Micro3050","msg":"Removed page=77fc91f5-955e-4226-aa52-5514e668b073 from context=19bfdfa9-38fb-4887-ad5c-8179fe339742 page stack"}
+{"level":30,"time":"2024-12-04T12:26:37.947Z","pid":4468,"hostname":"Micro3050","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11598:59)
+    at PlaywrightServer.setTimeout (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11837:57)
+    at Object.onReceiveHalfClose (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2024-12-04T12:26:37.998Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:26:37.998Z","pid":4468,"hostname":"Micro3050","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:26:38.002Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:26:38.002Z","pid":4468,"hostname":"Micro3050","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:26:38.008Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-12-04T12:26:38.471Z","pid":4468,"hostname":"Micro3050","msg":"Adding browser to stack: chromium, version: 130.0.6723.31"}
+{"level":30,"time":"2024-12-04T12:26:38.471Z","pid":4468,"hostname":"Micro3050","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-12-04T12:26:38.471Z","pid":4468,"hostname":"Micro3050","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-12-04T12:26:38.474Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-12-04T12:26:38.474Z","pid":4468,"hostname":"Micro3050","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-12-04T12:26:38.474Z","pid":4468,"hostname":"Micro3050","msg":"Trace file: "}
+{"level":30,"time":"2024-12-04T12:26:38.497Z","pid":4468,"hostname":"Micro3050","msg":"Changed active context"}
+{"level":30,"time":"2024-12-04T12:26:38.497Z","pid":4468,"hostname":"Micro3050","msg":"End of node method newContext"}
+{"level":30,"time":"2024-12-04T12:26:38.500Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-12-04T12:26:38.500Z","pid":4468,"hostname":"Micro3050","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-12-04T12:26:39.099Z","pid":4468,"hostname":"Micro3050","msg":"Video path: undefined"}
+{"level":30,"time":"2024-12-04T12:26:39.099Z","pid":4468,"hostname":"Micro3050","msg":"Changed active page"}
+{"level":30,"time":"2024-12-04T12:26:49.106Z","pid":4468,"hostname":"Micro3050","msg":"Error of node method  newPage"}
+================= Original suppressed error =================
+page.goto: Timeout 10000ms exceeded.
+Call log:
+  [2m- navigating to "https://www.asr.nl/", waiting until "load"[22m
+
+    at newPage (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11281:18)
+    at async PlaywrightServer.newPage (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11611:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2024-12-04T12:26:49.241Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:9508:11)
+    at takeScreenshot (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:9552:3)
+    at PlaywrightServer.takeScreenshot (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11611:34)
+    at Object.onReceiveHalfClose (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2024-12-04T12:26:49.242Z","pid":4468,"hostname":"Micro3050","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2024-12-04T12:26:49.295Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2024-12-04T12:26:49.536Z","pid":4468,"hostname":"Micro3050","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11598:59)
+    at PlaywrightServer.setTimeout (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11837:57)
+    at Object.onReceiveHalfClose (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2024-12-04T12:26:49.588Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:26:49.589Z","pid":4468,"hostname":"Micro3050","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:26:49.593Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:26:49.593Z","pid":4468,"hostname":"Micro3050","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:26:49.598Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-12-04T12:26:50.070Z","pid":4468,"hostname":"Micro3050","msg":"Adding browser to stack: chromium, version: 130.0.6723.31"}
+{"level":30,"time":"2024-12-04T12:26:50.071Z","pid":4468,"hostname":"Micro3050","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-12-04T12:26:50.071Z","pid":4468,"hostname":"Micro3050","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-12-04T12:26:50.073Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-12-04T12:26:50.073Z","pid":4468,"hostname":"Micro3050","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-12-04T12:26:50.073Z","pid":4468,"hostname":"Micro3050","msg":"Trace file: "}
+{"level":30,"time":"2024-12-04T12:26:50.128Z","pid":4468,"hostname":"Micro3050","msg":"Changed active context"}
+{"level":30,"time":"2024-12-04T12:26:50.128Z","pid":4468,"hostname":"Micro3050","msg":"End of node method newContext"}
+{"level":30,"time":"2024-12-04T12:26:50.132Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-12-04T12:26:50.132Z","pid":4468,"hostname":"Micro3050","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-12-04T12:26:50.707Z","pid":4468,"hostname":"Micro3050","msg":"Video path: undefined"}
+{"level":30,"time":"2024-12-04T12:26:50.707Z","pid":4468,"hostname":"Micro3050","msg":"Changed active page"}
+{"level":30,"time":"2024-12-04T12:26:57.962Z","pid":4468,"hostname":"Micro3050","msg":"End of node method newPage"}
+{"level":30,"time":"2024-12-04T12:26:57.966Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-12-04T12:26:57.966Z","pid":4468,"hostname":"Micro3050","msg":"Strict mode is enabled, find Locator with //*[@data-uitest=\"icon-tile-header\" and span[text()=\"Pensioen\"]] in page."}
+{"level":30,"time":"2024-12-04T12:26:58.191Z","pid":4468,"hostname":"Micro3050","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-12-04T12:26:58.196Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method click"}
+{"level":30,"time":"2024-12-04T12:26:58.196Z","pid":4468,"hostname":"Micro3050","msg":"Strict mode is enabled, find Locator with //*[@data-uitest=\"icon-tile-header\" and span[text()=\"Pensioen\"]] in page."}
+{"level":30,"time":"2024-12-04T12:26:58.888Z","pid":4468,"hostname":"Micro3050","msg":"End of node method click"}
+{"level":30,"time":"2024-12-04T12:26:58.897Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method WaitForPageLoadState"}
+{"level":30,"time":"2024-12-04T12:26:58.897Z","pid":4468,"hostname":"Micro3050","msg":"timeout: 10000 state: load"}
+{"level":30,"time":"2024-12-04T12:26:59.718Z","pid":4468,"hostname":"Micro3050","msg":"End of node method WaitForPageLoadState"}
+{"level":30,"time":"2024-12-04T12:26:59.735Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2024-12-04T12:26:59.735Z","pid":4468,"hostname":"Micro3050","Take screenshot with options: ":{"path":"C:\\Users\\Gebruiker\\Desktop\\ASR\\browser\\screenshot\\robotframework-browser-screenshot-3.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2024-12-04T12:27:00.153Z","pid":4468,"hostname":"Micro3050","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2024-12-04T12:27:00.159Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2024-12-04T12:27:00.218Z","pid":4468,"hostname":"Micro3050","msg":"Removed page=20726b12-d4f8-4316-8704-c5cebb62d31b from context=e9e9de7a-36e5-435a-9c95-b3496e816eba page stack"}
+{"level":30,"time":"2024-12-04T12:27:00.564Z","pid":4468,"hostname":"Micro3050","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11598:59)
+    at PlaywrightServer.setTimeout (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11837:57)
+    at Object.onReceiveHalfClose (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2024-12-04T12:27:00.618Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:27:00.618Z","pid":4468,"hostname":"Micro3050","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:27:00.622Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:27:00.622Z","pid":4468,"hostname":"Micro3050","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:27:00.627Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-12-04T12:27:01.085Z","pid":4468,"hostname":"Micro3050","msg":"Adding browser to stack: chromium, version: 130.0.6723.31"}
+{"level":30,"time":"2024-12-04T12:27:01.085Z","pid":4468,"hostname":"Micro3050","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-12-04T12:27:01.085Z","pid":4468,"hostname":"Micro3050","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-12-04T12:27:01.089Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-12-04T12:27:01.089Z","pid":4468,"hostname":"Micro3050","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-12-04T12:27:01.089Z","pid":4468,"hostname":"Micro3050","msg":"Trace file: "}
+{"level":30,"time":"2024-12-04T12:27:01.184Z","pid":4468,"hostname":"Micro3050","msg":"Changed active context"}
+{"level":30,"time":"2024-12-04T12:27:01.184Z","pid":4468,"hostname":"Micro3050","msg":"End of node method newContext"}
+{"level":30,"time":"2024-12-04T12:27:01.187Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-12-04T12:27:01.187Z","pid":4468,"hostname":"Micro3050","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-12-04T12:27:01.779Z","pid":4468,"hostname":"Micro3050","msg":"Video path: undefined"}
+{"level":30,"time":"2024-12-04T12:27:01.779Z","pid":4468,"hostname":"Micro3050","msg":"Changed active page"}
+{"level":30,"time":"2024-12-04T12:27:11.782Z","pid":4468,"hostname":"Micro3050","msg":"Error of node method  newPage"}
+================= Original suppressed error =================
+page.goto: Timeout 10000ms exceeded.
+Call log:
+  [2m- navigating to "https://www.asr.nl/", waiting until "load"[22m
+
+    at newPage (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11281:18)
+    at async PlaywrightServer.newPage (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11611:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+================= Original suppressed error =================
+{"level":30,"time":"2024-12-04T12:27:11.843Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method takeScreenshot"}
+Error: Tried to take screenshot, but no page was open.
+    at exists (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:9508:11)
+    at takeScreenshot (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:9552:3)
+    at PlaywrightServer.takeScreenshot (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11611:34)
+    at Object.onReceiveHalfClose (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2024-12-04T12:27:11.843Z","pid":4468,"hostname":"Micro3050","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2024-12-04T12:27:11.977Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2024-12-04T12:27:12.229Z","pid":4468,"hostname":"Micro3050","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11598:59)
+    at PlaywrightServer.setTimeout (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11837:57)
+    at Object.onReceiveHalfClose (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2024-12-04T12:27:12.281Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:27:12.281Z","pid":4468,"hostname":"Micro3050","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:27:12.285Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:27:12.285Z","pid":4468,"hostname":"Micro3050","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:27:12.291Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-12-04T12:27:12.707Z","pid":4468,"hostname":"Micro3050","msg":"Adding browser to stack: chromium, version: 130.0.6723.31"}
+{"level":30,"time":"2024-12-04T12:27:12.707Z","pid":4468,"hostname":"Micro3050","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-12-04T12:27:12.707Z","pid":4468,"hostname":"Micro3050","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-12-04T12:27:12.714Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-12-04T12:27:12.715Z","pid":4468,"hostname":"Micro3050","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-12-04T12:27:12.715Z","pid":4468,"hostname":"Micro3050","msg":"Trace file: "}
+{"level":30,"time":"2024-12-04T12:27:12.746Z","pid":4468,"hostname":"Micro3050","msg":"Changed active context"}
+{"level":30,"time":"2024-12-04T12:27:12.746Z","pid":4468,"hostname":"Micro3050","msg":"End of node method newContext"}
+{"level":30,"time":"2024-12-04T12:27:12.749Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-12-04T12:27:12.749Z","pid":4468,"hostname":"Micro3050","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-12-04T12:27:13.320Z","pid":4468,"hostname":"Micro3050","msg":"Video path: undefined"}
+{"level":30,"time":"2024-12-04T12:27:13.320Z","pid":4468,"hostname":"Micro3050","msg":"Changed active page"}
+{"level":30,"time":"2024-12-04T12:27:21.352Z","pid":4468,"hostname":"Micro3050","msg":"End of node method newPage"}
+{"level":30,"time":"2024-12-04T12:27:21.357Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-12-04T12:27:21.357Z","pid":4468,"hostname":"Micro3050","msg":"Strict mode is enabled, find Locator with //*[@data-uitest=\"icon-tile-header\" and span[text()=\"Levensverzekeringen\"]] in page."}
+{"level":30,"time":"2024-12-04T12:27:21.570Z","pid":4468,"hostname":"Micro3050","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-12-04T12:27:21.574Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method click"}
+{"level":30,"time":"2024-12-04T12:27:21.575Z","pid":4468,"hostname":"Micro3050","msg":"Strict mode is enabled, find Locator with //*[@data-uitest=\"icon-tile-header\" and span[text()=\"Levensverzekeringen\"]] in page."}
+{"level":30,"time":"2024-12-04T12:27:22.580Z","pid":4468,"hostname":"Micro3050","msg":"End of node method click"}
+{"level":30,"time":"2024-12-04T12:27:22.592Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method WaitForPageLoadState"}
+{"level":30,"time":"2024-12-04T12:27:22.592Z","pid":4468,"hostname":"Micro3050","msg":"timeout: 10000 state: load"}
+{"level":30,"time":"2024-12-04T12:27:28.168Z","pid":4468,"hostname":"Micro3050","msg":"End of node method WaitForPageLoadState"}
+{"level":30,"time":"2024-12-04T12:27:28.176Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2024-12-04T12:27:28.176Z","pid":4468,"hostname":"Micro3050","Take screenshot with options: ":{"path":"C:\\Users\\Gebruiker\\Desktop\\ASR\\browser\\screenshot\\robotframework-browser-screenshot-4.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2024-12-04T12:27:28.410Z","pid":4468,"hostname":"Micro3050","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2024-12-04T12:27:28.415Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2024-12-04T12:27:28.441Z","pid":4468,"hostname":"Micro3050","msg":"Removed page=62d3c693-ebd9-4198-ab80-fee0ed5ea2e1 from context=22530b16-d4b2-4e85-b763-310244926857 page stack"}
+{"level":30,"time":"2024-12-04T12:27:28.775Z","pid":4468,"hostname":"Micro3050","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11598:59)
+    at PlaywrightServer.setTimeout (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11837:57)
+    at Object.onReceiveHalfClose (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2024-12-04T12:27:28.829Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:27:28.830Z","pid":4468,"hostname":"Micro3050","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:27:28.833Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:27:28.833Z","pid":4468,"hostname":"Micro3050","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:27:28.837Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-12-04T12:27:29.317Z","pid":4468,"hostname":"Micro3050","msg":"Adding browser to stack: chromium, version: 130.0.6723.31"}
+{"level":30,"time":"2024-12-04T12:27:29.317Z","pid":4468,"hostname":"Micro3050","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-12-04T12:27:29.317Z","pid":4468,"hostname":"Micro3050","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-12-04T12:27:29.320Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-12-04T12:27:29.320Z","pid":4468,"hostname":"Micro3050","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-12-04T12:27:29.320Z","pid":4468,"hostname":"Micro3050","msg":"Trace file: "}
+{"level":30,"time":"2024-12-04T12:27:29.351Z","pid":4468,"hostname":"Micro3050","msg":"Changed active context"}
+{"level":30,"time":"2024-12-04T12:27:29.351Z","pid":4468,"hostname":"Micro3050","msg":"End of node method newContext"}
+{"level":30,"time":"2024-12-04T12:27:29.355Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-12-04T12:27:29.355Z","pid":4468,"hostname":"Micro3050","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-12-04T12:27:29.956Z","pid":4468,"hostname":"Micro3050","msg":"Video path: undefined"}
+{"level":30,"time":"2024-12-04T12:27:29.956Z","pid":4468,"hostname":"Micro3050","msg":"Changed active page"}
+{"level":30,"time":"2024-12-04T12:27:36.855Z","pid":4468,"hostname":"Micro3050","msg":"End of node method newPage"}
+{"level":30,"time":"2024-12-04T12:27:36.859Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-12-04T12:27:36.859Z","pid":4468,"hostname":"Micro3050","msg":"Strict mode is enabled, find Locator with //*[@data-uitest=\"icon-tile-header\" and span[text()=\"Beleggen\"]] in page."}
+{"level":30,"time":"2024-12-04T12:27:37.012Z","pid":4468,"hostname":"Micro3050","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-12-04T12:27:37.016Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method click"}
+{"level":30,"time":"2024-12-04T12:27:37.016Z","pid":4468,"hostname":"Micro3050","msg":"Strict mode is enabled, find Locator with //*[@data-uitest=\"icon-tile-header\" and span[text()=\"Beleggen\"]] in page."}
+{"level":30,"time":"2024-12-04T12:27:37.786Z","pid":4468,"hostname":"Micro3050","msg":"End of node method click"}
+{"level":30,"time":"2024-12-04T12:27:37.791Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method WaitForPageLoadState"}
+{"level":30,"time":"2024-12-04T12:27:37.791Z","pid":4468,"hostname":"Micro3050","msg":"timeout: 10000 state: load"}
+{"level":30,"time":"2024-12-04T12:27:38.697Z","pid":4468,"hostname":"Micro3050","msg":"End of node method WaitForPageLoadState"}
+{"level":30,"time":"2024-12-04T12:27:38.702Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2024-12-04T12:27:38.702Z","pid":4468,"hostname":"Micro3050","Take screenshot with options: ":{"path":"C:\\Users\\Gebruiker\\Desktop\\ASR\\browser\\screenshot\\robotframework-browser-screenshot-5.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2024-12-04T12:27:39.193Z","pid":4468,"hostname":"Micro3050","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2024-12-04T12:27:39.197Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2024-12-04T12:27:39.225Z","pid":4468,"hostname":"Micro3050","msg":"Removed page=eb5d4b07-83cf-4776-be92-1221eb0b40fe from context=b3e276cf-26bb-4077-990f-1a134235e317 page stack"}
+{"level":30,"time":"2024-12-04T12:27:39.553Z","pid":4468,"hostname":"Micro3050","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11598:59)
+    at PlaywrightServer.setTimeout (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11837:57)
+    at Object.onReceiveHalfClose (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2024-12-04T12:27:39.620Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:27:39.620Z","pid":4468,"hostname":"Micro3050","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:27:39.625Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:27:39.625Z","pid":4468,"hostname":"Micro3050","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:27:39.629Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-12-04T12:27:40.141Z","pid":4468,"hostname":"Micro3050","msg":"Adding browser to stack: chromium, version: 130.0.6723.31"}
+{"level":30,"time":"2024-12-04T12:27:40.141Z","pid":4468,"hostname":"Micro3050","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-12-04T12:27:40.141Z","pid":4468,"hostname":"Micro3050","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-12-04T12:27:40.144Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-12-04T12:27:40.144Z","pid":4468,"hostname":"Micro3050","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-12-04T12:27:40.144Z","pid":4468,"hostname":"Micro3050","msg":"Trace file: "}
+{"level":30,"time":"2024-12-04T12:27:40.177Z","pid":4468,"hostname":"Micro3050","msg":"Changed active context"}
+{"level":30,"time":"2024-12-04T12:27:40.178Z","pid":4468,"hostname":"Micro3050","msg":"End of node method newContext"}
+{"level":30,"time":"2024-12-04T12:27:40.182Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-12-04T12:27:40.182Z","pid":4468,"hostname":"Micro3050","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-12-04T12:27:40.744Z","pid":4468,"hostname":"Micro3050","msg":"Video path: undefined"}
+{"level":30,"time":"2024-12-04T12:27:40.744Z","pid":4468,"hostname":"Micro3050","msg":"Changed active page"}
+{"level":30,"time":"2024-12-04T12:27:49.705Z","pid":4468,"hostname":"Micro3050","msg":"End of node method newPage"}
+{"level":30,"time":"2024-12-04T12:27:49.710Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-12-04T12:27:49.710Z","pid":4468,"hostname":"Micro3050","msg":"Strict mode is enabled, find Locator with //*[@data-uitest=\"icon-tile-header\" and span[text()=\"Uitvaartverzekering\"]] in page."}
+{"level":30,"time":"2024-12-04T12:27:49.931Z","pid":4468,"hostname":"Micro3050","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-12-04T12:27:49.935Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method click"}
+{"level":30,"time":"2024-12-04T12:27:49.935Z","pid":4468,"hostname":"Micro3050","msg":"Strict mode is enabled, find Locator with //*[@data-uitest=\"icon-tile-header\" and span[text()=\"Uitvaartverzekering\"]] in page."}
+{"level":30,"time":"2024-12-04T12:27:50.414Z","pid":4468,"hostname":"Micro3050","msg":"End of node method click"}
+{"level":30,"time":"2024-12-04T12:27:50.422Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method WaitForPageLoadState"}
+{"level":30,"time":"2024-12-04T12:27:50.423Z","pid":4468,"hostname":"Micro3050","msg":"timeout: 10000 state: load"}
+{"level":30,"time":"2024-12-04T12:27:55.293Z","pid":4468,"hostname":"Micro3050","msg":"End of node method WaitForPageLoadState"}
+{"level":30,"time":"2024-12-04T12:27:55.298Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2024-12-04T12:27:55.298Z","pid":4468,"hostname":"Micro3050","Take screenshot with options: ":{"path":"C:\\Users\\Gebruiker\\Desktop\\ASR\\browser\\screenshot\\robotframework-browser-screenshot-6.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2024-12-04T12:27:57.725Z","pid":4468,"hostname":"Micro3050","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2024-12-04T12:27:57.729Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2024-12-04T12:27:57.752Z","pid":4468,"hostname":"Micro3050","msg":"Removed page=bed3d0cf-036c-48a9-8fe9-a5a79cc4ac0d from context=4463f9b7-1a1e-43ff-8760-11df1917e7ee page stack"}
+{"level":30,"time":"2024-12-04T12:27:58.120Z","pid":4468,"hostname":"Micro3050","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11598:59)
+    at PlaywrightServer.setTimeout (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11837:57)
+    at Object.onReceiveHalfClose (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2024-12-04T12:27:58.173Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:27:58.173Z","pid":4468,"hostname":"Micro3050","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:27:58.177Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:27:58.177Z","pid":4468,"hostname":"Micro3050","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:27:58.181Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-12-04T12:27:58.629Z","pid":4468,"hostname":"Micro3050","msg":"Adding browser to stack: chromium, version: 130.0.6723.31"}
+{"level":30,"time":"2024-12-04T12:27:58.629Z","pid":4468,"hostname":"Micro3050","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-12-04T12:27:58.629Z","pid":4468,"hostname":"Micro3050","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-12-04T12:27:58.632Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-12-04T12:27:58.632Z","pid":4468,"hostname":"Micro3050","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-12-04T12:27:58.632Z","pid":4468,"hostname":"Micro3050","msg":"Trace file: "}
+{"level":30,"time":"2024-12-04T12:27:58.672Z","pid":4468,"hostname":"Micro3050","msg":"Changed active context"}
+{"level":30,"time":"2024-12-04T12:27:58.672Z","pid":4468,"hostname":"Micro3050","msg":"End of node method newContext"}
+{"level":30,"time":"2024-12-04T12:27:58.675Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-12-04T12:27:58.675Z","pid":4468,"hostname":"Micro3050","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-12-04T12:27:59.277Z","pid":4468,"hostname":"Micro3050","msg":"Video path: undefined"}
+{"level":30,"time":"2024-12-04T12:27:59.278Z","pid":4468,"hostname":"Micro3050","msg":"Changed active page"}
+{"level":30,"time":"2024-12-04T12:28:09.298Z","pid":4468,"hostname":"Micro3050","msg":"Error of node method  newPage"}
+================= Original suppressed error =================
+page.goto: Timeout 10000ms exceeded.
+Call log:
+  [2m- navigating to "https://www.asr.nl/", waiting until "load"[22m
+
+    at newPage (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11281:18)
+    at async PlaywrightServer.newPage (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11611:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+================= Original suppressed error =================
+{"level":30,"time":"2024-12-04T12:28:09.421Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method takeScreenshot"}
+Error: Tried to take screenshot, but no page was open.
+    at exists (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:9508:11)
+    at takeScreenshot (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:9552:3)
+    at PlaywrightServer.takeScreenshot (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11611:34)
+    at Object.onReceiveHalfClose (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2024-12-04T12:28:09.421Z","pid":4468,"hostname":"Micro3050","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2024-12-04T12:28:09.473Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2024-12-04T12:28:09.710Z","pid":4468,"hostname":"Micro3050","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11598:59)
+    at PlaywrightServer.setTimeout (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11837:57)
+    at Object.onReceiveHalfClose (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2024-12-04T12:28:09.761Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:28:09.761Z","pid":4468,"hostname":"Micro3050","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11598:59)
+    at PlaywrightServer.setTimeout (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11837:57)
+    at Object.onReceiveHalfClose (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2024-12-04T12:28:09.818Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:28:09.818Z","pid":4468,"hostname":"Micro3050","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-04T12:28:09.898Z","pid":4468,"hostname":"Micro3050","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-12-04T12:28:09.898Z","pid":4468,"hostname":"Micro3050","msg":"End of node method closeAllBrowsers"}

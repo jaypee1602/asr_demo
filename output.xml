@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.6 on win32)" generated="2024-12-04T13:26:15.321001" rpa="false" schemaversion="5">
+<suite id="s1" name="ASR Scenarios" source="C:\Users\Gebruiker\Desktop\ASR\ASR_Scenarios.robot">
+<test id="s1-t1" name="Scenario1: Open ASR Website And Accept cookies" line="17">
+<kw name="Open Browser" owner="Browser">
+<msg time="2024-12-04T13:26:15.693266" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2024-12-04T13:26:15.693911" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Gebruiker\\Desktop\\ASR\\browser\\traces\\7918a3dc-d8a5-4040-83c9-2dc3301a6fc4"}</msg>
+<msg time="2024-12-04T13:26:15.741945" level="INFO">Starting Browser process C:\Users\Gebruiker\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js using port 54847</msg>
+<msg time="2024-12-04T13:26:15.741945" level="INFO">Node startup parameters: ['node', 'C:\\Users\\Gebruiker\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js', '54847']</msg>
+<msg time="2024-12-04T13:26:17.381083" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Gebruiker\\Desktop\\ASR\\browser\\traces\\7918a3dc-d8a5-4040-83c9-2dc3301a6fc4"}</msg>
+<msg time="2024-12-04T13:26:17.381083" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": true,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg time="2024-12-04T13:26:17.415085" level="INFO">Successfully created context. </msg>
+<msg time="2024-12-04T13:26:17.415085" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2024-12-04T13:26:24.156586" level="INFO">Successfully initialized new page object and opened url: https://www.asr.nl</msg>
+<arg>${url}</arg>
+<arg>chromium</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<status status="PASS" start="2024-12-04T13:26:15.692266" elapsed="8.464320"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-12-04T13:26:24.313047" level="INFO">Waited for Element with selector id=onetrust-accept-btn-handler at state visible</msg>
+<arg>${accept_cookies}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-12-04T13:26:24.157587" elapsed="0.156460"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-12-04T13:26:24.315047" level="INFO">Clicks the element 'id=onetrust-accept-btn-handler'.</msg>
+<arg>${accept_cookies}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-04T13:26:24.314047" elapsed="0.227218"/>
+</kw>
+<kw name="Wait For Load State" owner="Browser">
+<msg time="2024-12-04T13:26:24.543261" level="INFO">Waiting page load to state to receive domcontentloaded in 10000.0</msg>
+<msg time="2024-12-04T13:26:24.550273" level="INFO">Load state domcontentloaded got in 10000</msg>
+<arg>domcontentloaded</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits that the page reaches the required load state.</doc>
+<status status="PASS" start="2024-12-04T13:26:24.542261" elapsed="0.008012"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2024-12-04T13:26:24.746554" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2024-12-04T13:26:24.551282" elapsed="0.195272"/>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2024-12-04T13:26:25.167828" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-12-04T13:26:24.746554" elapsed="0.422275"/>
+</kw>
+<status status="PASS" start="2024-12-04T13:26:15.690265" elapsed="9.478564"/>
+</test>
+<test id="s1-t2" name="Scenario2: Open ASR and Navigate to verzekeringen" line="25">
+<kw name="Open Browser" owner="Browser">
+<msg time="2024-12-04T13:26:25.227826" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2024-12-04T13:26:25.228827" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Gebruiker\\Desktop\\ASR\\browser\\traces\\970d8e01-08b2-4488-8937-a160d85de3ab"}</msg>
+<msg time="2024-12-04T13:26:25.651531" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Gebruiker\\Desktop\\ASR\\browser\\traces\\970d8e01-08b2-4488-8937-a160d85de3ab"}</msg>
+<msg time="2024-12-04T13:26:25.651531" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": true,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg time="2024-12-04T13:26:25.716050" level="INFO">Successfully created context. </msg>
+<msg time="2024-12-04T13:26:25.717052" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2024-12-04T13:26:34.344244" level="INFO">Successfully initialized new page object and opened url: https://www.asr.nl</msg>
+<arg>${url}</arg>
+<arg>chromium</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<status status="PASS" start="2024-12-04T13:26:25.226839" elapsed="9.117405"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-12-04T13:26:34.499349" level="INFO">Waited for Element with selector //*[@data-uitest="icon-tile-header" and span[text()="Alle verzekeringen"]] at state visible</msg>
+<arg>${alle_verzekeringen}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-12-04T13:26:34.345242" elapsed="0.154107"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-12-04T13:26:34.500349" level="INFO">Clicks the element '//*[@data-uitest="icon-tile-header" and span[text()="Alle verzekeringen"]]'.</msg>
+<arg>${alle_verzekeringen}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-04T13:26:34.500349" elapsed="0.635660"/>
+</kw>
+<kw name="Wait For Load State" owner="Browser">
+<msg time="2024-12-04T13:26:35.158009" level="INFO">Waiting page load to state to receive domcontentloaded in 10000.0</msg>
+<msg time="2024-12-04T13:26:37.002447" level="INFO">Load state domcontentloaded got in 10000</msg>
+<arg>domcontentloaded</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits that the page reaches the required load state.</doc>
+<status status="PASS" start="2024-12-04T13:26:35.156008" elapsed="1.847439"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2024-12-04T13:26:37.608884" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2024-12-04T13:26:37.005448" elapsed="0.603436"/>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2024-12-04T13:26:37.948502" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-12-04T13:26:37.609884" elapsed="0.338618"/>
+</kw>
+<status status="PASS" start="2024-12-04T13:26:25.223828" elapsed="12.725668"/>
+</test>
+<test id="s1-t3" name="Scenario3: Open ASR and Navigate to zorgverzekering" line="34">
+<kw name="Open Browser" owner="Browser">
+<msg time="2024-12-04T13:26:38.006022" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2024-12-04T13:26:38.007024" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Gebruiker\\Desktop\\ASR\\browser\\traces\\eeef035a-edd9-451a-a79b-2041c9ff9416"}</msg>
+<msg time="2024-12-04T13:26:38.472527" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Gebruiker\\Desktop\\ASR\\browser\\traces\\eeef035a-edd9-451a-a79b-2041c9ff9416"}</msg>
+<msg time="2024-12-04T13:26:38.472527" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": true,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg time="2024-12-04T13:26:38.499050" level="INFO">Successfully created context. </msg>
+<msg time="2024-12-04T13:26:38.499050" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2024-12-04T13:26:49.283338" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2024-12-04T13:26:49.284339" level="INFO">See also file:///C:/Users/Gebruiker/Desktop/ASR/playwright-log.txt for additional details.</msg>
+<msg time="2024-12-04T13:26:49.284339" level="FAIL">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://www.asr.nl/", waiting until "load"
+</msg>
+<arg>${url}</arg>
+<arg>chromium</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<status status="FAIL" start="2024-12-04T13:26:38.005026" elapsed="11.286343">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://www.asr.nl/", waiting until "load"
+</status>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>${zorgverzekering}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2024-12-04T13:26:49.292339" elapsed="0.000000"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${zorgverzekering}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2024-12-04T13:26:49.292339" elapsed="0.000000"/>
+</kw>
+<kw name="Wait For Load State" owner="Browser">
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits that the page reaches the required load state.</doc>
+<status status="NOT RUN" start="2024-12-04T13:26:49.293296" elapsed="0.000000"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="NOT RUN" start="2024-12-04T13:26:49.293716" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2024-12-04T13:26:49.537358" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-12-04T13:26:49.293716" elapsed="0.243642"/>
+</kw>
+<status status="FAIL" start="2024-12-04T13:26:38.001021" elapsed="11.537327">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://www.asr.nl/", waiting until "load"
+</status>
+</test>
+<test id="s1-t4" name="Scenario4: Open ASR and Navigate to pesnionen" line="44">
+<kw name="Open Browser" owner="Browser">
+<msg time="2024-12-04T13:26:49.595881" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2024-12-04T13:26:49.596880" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Gebruiker\\Desktop\\ASR\\browser\\traces\\2f68f4a8-649e-48f8-83eb-9870a3c375b3"}</msg>
+<msg time="2024-12-04T13:26:50.072559" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Gebruiker\\Desktop\\ASR\\browser\\traces\\2f68f4a8-649e-48f8-83eb-9870a3c375b3"}</msg>
+<msg time="2024-12-04T13:26:50.072559" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": true,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg time="2024-12-04T13:26:50.130086" level="INFO">Successfully created context. </msg>
+<msg time="2024-12-04T13:26:50.130086" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2024-12-04T13:26:57.963670" level="INFO">Successfully initialized new page object and opened url: https://www.asr.nl</msg>
+<arg>${url}</arg>
+<arg>chromium</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<status status="PASS" start="2024-12-04T13:26:49.594892" elapsed="8.368778"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-12-04T13:26:58.192747" level="INFO">Waited for Element with selector //*[@data-uitest="icon-tile-header" and span[text()="Pensioen"]] at state visible</msg>
+<arg>${pensioen}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-12-04T13:26:57.964670" elapsed="0.228077"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-12-04T13:26:58.194746" level="INFO">Clicks the element '//*[@data-uitest="icon-tile-header" and span[text()="Pensioen"]]'.</msg>
+<arg>${pensioen}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-04T13:26:58.193747" elapsed="0.695546"/>
+</kw>
+<kw name="Wait For Load State" owner="Browser">
+<msg time="2024-12-04T13:26:58.896297" level="INFO">Waiting page load to state to receive load in 10000.0</msg>
+<msg time="2024-12-04T13:26:59.732282" level="INFO">Load state load got in 10000</msg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits that the page reaches the required load state.</doc>
+<status status="PASS" start="2024-12-04T13:26:58.895293" elapsed="0.836989"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2024-12-04T13:27:00.155536" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-3.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-3.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2024-12-04T13:26:59.732282" elapsed="0.423254"/>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2024-12-04T13:27:00.565668" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-12-04T13:27:00.156518" elapsed="0.409150"/>
+</kw>
+<status status="PASS" start="2024-12-04T13:26:49.592364" elapsed="10.975304"/>
+</test>
+<test id="s1-t5" name="Scenario5: Open ASR and Navigate to Hypotheek" line="53">
+<kw name="Open Browser" owner="Browser">
+<msg time="2024-12-04T13:27:00.625186" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2024-12-04T13:27:00.626187" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Gebruiker\\Desktop\\ASR\\browser\\traces\\f0d5c62b-b5d6-46f9-ae0e-46e31adedd56"}</msg>
+<msg time="2024-12-04T13:27:01.086686" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Gebruiker\\Desktop\\ASR\\browser\\traces\\f0d5c62b-b5d6-46f9-ae0e-46e31adedd56"}</msg>
+<msg time="2024-12-04T13:27:01.087685" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": true,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg time="2024-12-04T13:27:01.185212" level="INFO">Successfully created context. </msg>
+<msg time="2024-12-04T13:27:01.185212" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2024-12-04T13:27:11.968846" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2024-12-04T13:27:11.969847" level="INFO">See also file:///C:/Users/Gebruiker/Desktop/ASR/playwright-log.txt for additional details.</msg>
+<msg time="2024-12-04T13:27:11.969847" level="FAIL">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://www.asr.nl/", waiting until "load"
+</msg>
+<arg>${url}</arg>
+<arg>chromium</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<status status="FAIL" start="2024-12-04T13:27:00.624185" elapsed="11.347663">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://www.asr.nl/", waiting until "load"
+</status>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>${hypotheek}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2024-12-04T13:27:11.972847" elapsed="0.000000"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${hypotheek}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2024-12-04T13:27:11.972847" elapsed="0.000000"/>
+</kw>
+<kw name="Wait For Load State" owner="Browser">
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits that the page reaches the required load state.</doc>
+<status status="NOT RUN" start="2024-12-04T13:27:11.973847" elapsed="0.000000"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="NOT RUN" start="2024-12-04T13:27:11.973847" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2024-12-04T13:27:12.230428" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-12-04T13:27:11.974848" elapsed="0.255580"/>
+</kw>
+<status status="FAIL" start="2024-12-04T13:27:00.621188" elapsed="11.610238">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://www.asr.nl/", waiting until "load"
+</status>
+</test>
+<test id="s1-t6" name="Scenario6: Open ASR and Navigate to Levensverzekeringen" line="62">
+<kw name="Open Browser" owner="Browser">
+<msg time="2024-12-04T13:27:12.288433" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2024-12-04T13:27:12.289432" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Gebruiker\\Desktop\\ASR\\browser\\traces\\8453e2db-bb2f-4854-946f-8dac26ea5e2e"}</msg>
+<msg time="2024-12-04T13:27:12.713518" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Gebruiker\\Desktop\\ASR\\browser\\traces\\8453e2db-bb2f-4854-946f-8dac26ea5e2e"}</msg>
+<msg time="2024-12-04T13:27:12.713518" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": true,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg time="2024-12-04T13:27:12.747036" level="INFO">Successfully created context. </msg>
+<msg time="2024-12-04T13:27:12.748041" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2024-12-04T13:27:21.353170" level="INFO">Successfully initialized new page object and opened url: https://www.asr.nl</msg>
+<arg>${url}</arg>
+<arg>chromium</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<status status="PASS" start="2024-12-04T13:27:12.287431" elapsed="9.065739"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-12-04T13:27:21.572279" level="INFO">Waited for Element with selector //*[@data-uitest="icon-tile-header" and span[text()="Levensverzekeringen"]] at state visible</msg>
+<arg>${levensverzekeringen}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-12-04T13:27:21.354167" elapsed="0.218112"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-12-04T13:27:21.573280" level="INFO">Clicks the element '//*[@data-uitest="icon-tile-header" and span[text()="Levensverzekeringen"]]'.</msg>
+<arg>${levensverzekeringen}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-04T13:27:21.572279" elapsed="1.008739"/>
+</kw>
+<kw name="Wait For Load State" owner="Browser">
+<msg time="2024-12-04T13:27:22.590018" level="INFO">Waiting page load to state to receive load in 10000.0</msg>
+<msg time="2024-12-04T13:27:28.169821" level="INFO">Load state load got in 10000</msg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits that the page reaches the required load state.</doc>
+<status status="PASS" start="2024-12-04T13:27:22.590018" elapsed="5.579803"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2024-12-04T13:27:28.412749" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-4.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-4.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2024-12-04T13:27:28.170821" elapsed="0.241928"/>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2024-12-04T13:27:28.776205" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-12-04T13:27:28.413749" elapsed="0.362456"/>
+</kw>
+<status status="PASS" start="2024-12-04T13:27:12.284431" elapsed="16.494773"/>
+</test>
+<test id="s1-t7" name="Scenario7: Open ASR and Navigate to Beleggen" line="70">
+<kw name="Open Browser" owner="Browser">
+<msg time="2024-12-04T13:27:28.834749" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2024-12-04T13:27:28.835756" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Gebruiker\\Desktop\\ASR\\browser\\traces\\d80ea022-67c1-4e38-a1b3-88e95fd70891"}</msg>
+<msg time="2024-12-04T13:27:29.318198" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Gebruiker\\Desktop\\ASR\\browser\\traces\\d80ea022-67c1-4e38-a1b3-88e95fd70891"}</msg>
+<msg time="2024-12-04T13:27:29.319197" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": true,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg time="2024-12-04T13:27:29.352726" level="INFO">Successfully created context. </msg>
+<msg time="2024-12-04T13:27:29.353726" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2024-12-04T13:27:36.856344" level="INFO">Successfully initialized new page object and opened url: https://www.asr.nl</msg>
+<arg>${url}</arg>
+<arg>chromium</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<status status="PASS" start="2024-12-04T13:27:28.834749" elapsed="8.021595"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-12-04T13:27:37.013411" level="INFO">Waited for Element with selector //*[@data-uitest="icon-tile-header" and span[text()="Beleggen"]] at state visible</msg>
+<arg>${beleggen}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-12-04T13:27:36.857335" elapsed="0.156076"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-12-04T13:27:37.014411" level="INFO">Clicks the element '//*[@data-uitest="icon-tile-header" and span[text()="Beleggen"]]'.</msg>
+<arg>${beleggen}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-04T13:27:37.014411" elapsed="0.774033"/>
+</kw>
+<kw name="Wait For Load State" owner="Browser">
+<msg time="2024-12-04T13:27:37.789442" level="INFO">Waiting page load to state to receive load in 10000.0</msg>
+<msg time="2024-12-04T13:27:38.699333" level="INFO">Load state load got in 10000</msg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits that the page reaches the required load state.</doc>
+<status status="PASS" start="2024-12-04T13:27:37.788444" elapsed="0.910889"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2024-12-04T13:27:39.194549" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-5.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-5.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2024-12-04T13:27:38.699333" elapsed="0.495216"/>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2024-12-04T13:27:39.554731" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-12-04T13:27:39.195545" elapsed="0.359186"/>
+</kw>
+<status status="PASS" start="2024-12-04T13:27:28.832214" elapsed="10.723514"/>
+</test>
+<test id="s1-t8" name="Scenario8: Open ASR and Navigate to Uitvaartverzekering" line="79">
+<kw name="Open Browser" owner="Browser">
+<msg time="2024-12-04T13:27:39.627727" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2024-12-04T13:27:39.627727" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Gebruiker\\Desktop\\ASR\\browser\\traces\\f76304ca-7840-4f90-a21f-c99a5c2aed82"}</msg>
+<msg time="2024-12-04T13:27:40.142649" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Gebruiker\\Desktop\\ASR\\browser\\traces\\f76304ca-7840-4f90-a21f-c99a5c2aed82"}</msg>
+<msg time="2024-12-04T13:27:40.142649" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": true,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg time="2024-12-04T13:27:40.180170" level="INFO">Successfully created context. </msg>
+<msg time="2024-12-04T13:27:40.180170" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2024-12-04T13:27:49.706686" level="INFO">Successfully initialized new page object and opened url: https://www.asr.nl</msg>
+<arg>${url}</arg>
+<arg>chromium</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<status status="PASS" start="2024-12-04T13:27:39.626729" elapsed="10.079957"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-12-04T13:27:49.931792" level="INFO">Waited for Element with selector //*[@data-uitest="icon-tile-header" and span[text()="Uitvaartverzekering"]] at state visible</msg>
+<arg>${uitvaartverzekering}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-12-04T13:27:49.707683" elapsed="0.225119"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-12-04T13:27:49.933798" level="INFO">Clicks the element '//*[@data-uitest="icon-tile-header" and span[text()="Uitvaartverzekering"]]'.</msg>
+<arg>${uitvaartverzekering}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-04T13:27:49.932802" elapsed="0.482673"/>
+</kw>
+<kw name="Wait For Load State" owner="Browser">
+<msg time="2024-12-04T13:27:50.419480" level="INFO">Waiting page load to state to receive load in 10000.0</msg>
+<msg time="2024-12-04T13:27:55.294407" level="INFO">Load state load got in 10000</msg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits that the page reaches the required load state.</doc>
+<status status="PASS" start="2024-12-04T13:27:50.418500" elapsed="4.875907"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2024-12-04T13:27:57.727232" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-6.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-6.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2024-12-04T13:27:55.295405" elapsed="2.431827"/>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2024-12-04T13:27:58.121261" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-12-04T13:27:57.728231" elapsed="0.394018"/>
+</kw>
+<status status="PASS" start="2024-12-04T13:27:39.623730" elapsed="18.499518"/>
+</test>
+<test id="s1-t9" name="Scenario9: Open ASR and Navigate to ASR Vitality" line="88">
+<kw name="Open Browser" owner="Browser">
+<msg time="2024-12-04T13:27:58.179770" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2024-12-04T13:27:58.179770" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Gebruiker\\Desktop\\ASR\\browser\\traces\\e56bce8e-e989-457c-9e37-84b842dcb830"}</msg>
+<msg time="2024-12-04T13:27:58.629945" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Gebruiker\\Desktop\\ASR\\browser\\traces\\e56bce8e-e989-457c-9e37-84b842dcb830"}</msg>
+<msg time="2024-12-04T13:27:58.630947" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": true,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg time="2024-12-04T13:27:58.673474" level="INFO">Successfully created context. </msg>
+<msg time="2024-12-04T13:27:58.673474" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2024-12-04T13:28:09.466894" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2024-12-04T13:28:09.466894" level="INFO">See also file:///C:/Users/Gebruiker/Desktop/ASR/playwright-log.txt for additional details.</msg>
+<msg time="2024-12-04T13:28:09.466894" level="FAIL">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://www.asr.nl/", waiting until "load"
+</msg>
+<arg>${url}</arg>
+<arg>chromium</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<status status="FAIL" start="2024-12-04T13:27:58.178770" elapsed="11.290123">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://www.asr.nl/", waiting until "load"
+</status>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>${asr_vitality}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2024-12-04T13:28:09.468893" elapsed="0.000000"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${asr_vitality}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2024-12-04T13:28:09.469892" elapsed="0.000000"/>
+</kw>
+<kw name="Wait For Load State" owner="Browser">
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits that the page reaches the required load state.</doc>
+<status status="NOT RUN" start="2024-12-04T13:28:09.469892" elapsed="0.000000"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="NOT RUN" start="2024-12-04T13:28:09.469892" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2024-12-04T13:28:09.710993" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-12-04T13:28:09.470892" elapsed="0.241099"/>
+</kw>
+<status status="FAIL" start="2024-12-04T13:27:58.174784" elapsed="11.537207">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://www.asr.nl/", waiting until "load"
+</status>
+</test>
+<status status="FAIL" start="2024-12-04T13:26:15.323002" elapsed="114.441010"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="6" fail="3" skip="0" id="s1" name="ASR Scenarios">ASR Scenarios</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-12-04T13:26:15.693266" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2024-12-04T13:26:25.227826" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2024-12-04T13:26:38.006022" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2024-12-04T13:26:49.595881" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2024-12-04T13:27:00.625186" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2024-12-04T13:27:12.288433" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2024-12-04T13:27:28.834749" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2024-12-04T13:27:39.627727" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2024-12-04T13:27:58.179770" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+</errors>
+</robot>
