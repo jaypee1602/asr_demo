@@ -1,5 +1,6 @@
 *** Settings ***
 Library    Browser
+Library           RequestsLibrary
 
 *** Variables ***
 ${url}       https://www.asr.nl
@@ -12,6 +13,11 @@ ${levensverzekeringen}    //*[@data-uitest="icon-tile-header" and span[text()="L
 ${beleggen}               //*[@data-uitest="icon-tile-header" and span[text()="Beleggen"]]
 ${uitvaartverzekering}      //*[@data-uitest="icon-tile-header" and span[text()="Uitvaartverzekering"]]
 ${asr_vitality}          //*[@data-uitest="icon-tile-header" and span[text()="a.s.r. Vitality"]]
+${contact_endpoint}         /contact
+${adviseurs_endpoint}       /adviseurs  
+${overASR_endpoint}        /over-asr
+
+
 
 *** Test Cases ***
 Scenario1: Open ASR Website And Accept cookies
@@ -35,7 +41,7 @@ Scenario3: Open ASR and Navigate to zorgverzekering
     Open Browser    ${url}    chromium
     Wait For Elements State    ${zorgverzekering}    visible    timeout=10s
     Click    ${zorgverzekering}
-    Wait For Load State    timeout=10s
+    Wait For Load State    load    timeout=10s
     Take Screenshot
     [Teardown]    Close Browser
 
@@ -93,4 +99,29 @@ Scenario9: Open ASR and Navigate to ASR Vitality
     Take Screenshot
     [Teardown]    Close Browser
 
+
+Scenario10: Open ASR and Make an API Call
+    Open Browser   ${url}     chromium
+    Create Session      asr_session      ${url}     verify=False
+    ${response}         GET On Session   asr_session    ${contact_endpoint}
+    Should Be Equal As Integers    ${response.status_code}    200
+    Should Contain                 ${response.headers['Content-Type']}    text/html
+    [Teardown]    Close Browser
+
+
+Scenario11: Open ASR and Make an API Call Adviseurs
+    Open Browser   ${url}     chromium
+    Create Session      asr_session      ${url}         verify=False
+    ${response}         GET On Session   asr_session    ${adviseurs_endpoint}
+    Should Be Equal As Integers    ${response.status_code}    200
+    Should Contain                 ${response.headers['Content-Type']}    text/html
+    [Teardown]    Close Browser
+
+Scenario12: Open ASR and Make an API Call Over ASR
+    Open Browser   ${url}     chromium
+    Create Session      asr_session      ${url}         verify=False
+    ${response}         GET On Session   asr_session    ${overASR_endpoint} 
+    Should Be Equal As Integers    ${response.status_code}    200
+    Should Contain                 ${response.headers['Content-Type']}    text/html
+    [Teardown]    Close Browser
 
